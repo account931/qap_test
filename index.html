@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--http://myrusakov.ru/javascript-event-checkbox.html-->
+<!--http://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_checkbox_value-->
+<!--http://stackoverflow.com/questions/16601741/checkbox-value-in-array-javascript-->
+
+<!--http://www.shad-55.narod.ru/html/content/shablon3.html--><!-- HTMLing-->
+<!-- http://www.w3schools.com/jsref/jsref_indexof_array.asp--> <!--on CHECKED clicking find it's  value  in array -->
+
+<html>
+<head>
+<title>Test</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="script.js"></script>
+</head>
+<body>
+<div id="all">
+      <span></span>
+   <div id="form1">
+       <div id="d1">
+          <form action="">
+                <input type="checkbox" name="vehicle" value="Number1.1" id="in1"/>Number 1</br> <!--onchange = 'showOrHide("in1");'-->
+                <input type="checkbox" name="vehicle" value="Number1.2" id="in2"/>Number 2<br>  <!--onchange = 'getCheckboxValues(this);return false;'-->
+                <input type="checkbox" name="vehicle" value="Number1.3" id="in3"/>Number 3<br>
+                <input type="checkbox" name="vehicle" value="Number1.4" id="in3"/>Number 4<br>
+                <input type="checkbox" name="vehicle" value="Number1.5" id="in3"/>Number 5<br>
+           </form> 
+           <input type="button" value="Check" id="checkButton"/>
+           <p id="dot1"></p><!--&#9679;-->
+       </div><!--End id="1" -->
+        
+    
+
+<!---------------------------------------------------------------------------------------------------->
+
+       <div id="d2">
+          <form action="">
+                <input type="checkbox" name="vehicle" value="Number2.1">Number 2.1<br>
+                <input type="checkbox" name="vehicle" value="Number2.2">Number 2.2<br>
+                <input type="checkbox" name="vehicle" value="Number2.3">Number 2.3<br>
+           </form>
+           <p id="dot2"></p>
+       </div><!--End id="2" -->
+
+
+<!-------------------------------------------------------------------------------------------------------->
+
+       <div id="d3">
+           <form action="">
+                <input type="checkbox" name="vehicle" value="Number3.1">Number 3.1<br>
+                <input type="checkbox" name="vehicle" value="Number3.2">Number 3.2<br>
+                <input type="checkbox" name="vehicle" value="Number3.3">Number 3.3<br>
+                <input type="checkbox" name="vehicle" value="Number3.4">Number 3.4<br>
+           </form>
+           <p id="dot3"></p>
+       </div><!--End id="3" --> 
+
+
+<!--------------------------------------------------------------------------------------------------------->
+
+       <input type="button" id="butt1" value="Next"/> 
+
+    </div><!--End id="form1" -->
+ 
+<!-------------------------------------------------------------------------------------------------------->   
+ <div id="form2Wrap">   
+   <div  id="form2"> 
+       <div> 
+          <form id="Frform2">
+             Name &nbsp;&nbsp;<input  type="text"/>
+             E-mail <input  type="text"/></br>
+         </form>
+         <p class="resultMy"></p>
+        </div> 
+
+    </div><!--End id="form2" -->
+       <div=id "form2Buttons">
+        <input  type="button" value="send"/></br>
+        <input type="button" id="butt2" value="Back &#x021BA;"/> <!-- USSR &#9773;-->
+       </div> <!--id "form2Buttons">-->
+ </div><!--END  id="form2Wrap">  -->
+<!-------------------------------------------------------------------------------------------------->
+
+</div><!--End id="all" -->
+
+
+
+
+
+
+<script>
+
+//  not  working 
+/*function getCheckboxValues(form) {
+  var values = [];
+  var vehicles = form.vehicle;
+
+  for (var i=0, iLen=vehicles.length; i<iLen; i++) {
+    if (vehicles[i].checked) {
+      values.push(vehicles[i].value);
+    }
+  }
+  // Do something with values
+  alert("Vehicles: " + values.join(', '));
+  return values;
+}*/
+
+
+/*function showOrHide(cb) {  // argument  is  an id 
+    cb = document.getElementById(cb);alert(cb);
+    if (cb.checked) {
+              var c= document.getElementById("cb").value;  //problems  is  here
+              alert(c);
+             //add value  to  array 
+            // resulted.push(c);
+                                }
+  }*/
+</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+body{margin: 0;padding:0;}
+
+#all{width:1024px;margin:0 auto;}
+#form1{width:1000px;position:relative;top:50px;left:50px;background:grey;height:510px;}
+#d1,#d2,#d3 {
+border:1px solid black;
+width:304px;
+height:480px; //480px;
+background:blue;
+/*display: inline-block;*/
+margin:10px;
+overflow: auto;
+}
+
+
+#d1{float:left;}
+#d2{float:left;}
+#d3{float:right;}
+
+form{margin:10px;color:white;}
+
+
+.delete img{margin-left:5px;width:18px;margin-top:25px;}
+
+
+#butt1{margin-top:9px;}
+#checkButton{position:absolute;bottom:18px;left:10px;}
+
+
+#dot1{left:150px;bottom:-15px;position:absolute;}
+#dot2{left:486px;bottom:-15px;position:absolute;}
+#dot3{left:830px;bottom:-15px;position:absolute;}
+
+
+
+/* ---------------------------------Form 2 ---------------------------------------------------------------------- */
+#Frform2{margin-top:70px;color:black;}/*form2 (hidden)*/
+
+#form2Wrap{display:none;position: relative;}
+#form2{width:700px;position:relative;top:50px;left:90px;background:orange;height:500px;/*display:none;*/color:black;border:7px solid yellow;overflow: scroll;}
+
+#butt2{/*position:absolute;top:500px;margin-top:200px;*/}
+
+#form2Buttons{position: absolute;bottom: -230px;left:30px;display:block;}
+
+.resultArray{margin-left:16px;margin-top:16px;text-decoration: underline;}
+.resultArray img{width:15px;margin-left:13px;}
+
+.deleteItem{cursor:pointer;}
+/* -----------------------------END Form 2 ---------------------------------------------------------------------- */
